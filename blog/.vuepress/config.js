@@ -82,7 +82,7 @@ module.exports = {
         github: "louisyoungx",
         linkedin: "louis-young-4395b0221",
         facebook: "louisyoungx",
-        twitter: "louisyoungx_zxh",
+        twitter: "louisyoungx",
         zhihu: "wen-dao-shui-yang-3",
         email: "eric_aaron@icloud.com",
       }
