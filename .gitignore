@@ -8,3 +8,4 @@ dist/
 .yarnrc
 blog/drafts/
 cache/
+.idea/
