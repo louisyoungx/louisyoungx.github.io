@@ -9,6 +9,7 @@ catalog: true
 tags:
   - chinese
   - python
+  - library
   - dynamic
   - dependence
   - auto
