@@ -7,8 +7,10 @@ date: 2021-12-20
 header_img: /img/in-post/2021-12-20/header.jpg
 catalog: true
 tags:
-  - python
   - chinese
+  - zpy
+  - zpy-lab
+  - python
   - programming
   - situation
 ---

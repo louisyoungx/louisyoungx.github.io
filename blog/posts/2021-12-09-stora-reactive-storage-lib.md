@@ -7,6 +7,7 @@ date: 2021-12-09
 header_img: /img/in-post/2021-12-09/header.jpg
 catalog: true
 tags:
+  - chinese
   - python
   - reactive
   - storage
