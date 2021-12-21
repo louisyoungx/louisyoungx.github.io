@@ -1,4 +1,4 @@
-name: build and deploy VuePress to GitHub Pages automatically
+name: build and deploy VuePress to Server automatically
 
 on:
   push:
