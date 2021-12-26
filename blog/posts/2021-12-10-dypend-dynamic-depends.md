@@ -15,6 +15,8 @@ tags:
   - auto
 ---
 
+[`English Version`](https://www.reddit.com/r/Python/comments/rc9qzm/import_libraries_dynamically/)
+
 前几天在一个开源项目里遇到好多用户反馈，不会安装依赖，或者执行 `pip install -r requirements.txt` 没有反应。
 
 <!-- more -->
