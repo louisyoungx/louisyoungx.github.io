@@ -11,6 +11,7 @@ tags:
   - web
   - vue.js
   - principle
+  - core
   - javascript
 ---
 
