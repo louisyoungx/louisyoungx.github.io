@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vue.js - Renderer Module
-subtitle: Deep Dive Renderer Modules of Vue.js
+subtitle: Deep Dive into Renderer Modules of Vue.js
 author: "louisyoungx"
 date: 2021-12-26
 header_img: /img/in-post/2021-12-26/header.jpg
