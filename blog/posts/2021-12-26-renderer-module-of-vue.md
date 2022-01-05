@@ -175,6 +175,12 @@ The `h` function is like
 
 ```javascript
 function h(tag, props, children) {
+    // if the tag or children is number, change them to string
+    if (typeof tag === "number") {
+        tag = String(tag)
+    } else if (typeof children === "number") {
+        children = String(children)
+    }
     return {
         tag,
         props,
@@ -213,7 +219,12 @@ function mount(vnode, container) {
         // if exist, set attribute to the dom
         for (let attr in vnode.props) {
             const value = vnode.props[attr];
-            element.setAttribute(attr, value);
+            // if the attr is function(start with 'on'), add a event listener
+            if (attr.startsWith('on')) {
+                element.addEventListener(attr.slice(2).toLowerCase(), value)
+            } else {
+                element.setAttribute(attr, value);
+            }
         }
     }
 
