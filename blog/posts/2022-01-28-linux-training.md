@@ -12,11 +12,11 @@ tags:
   - training
 ---
 
-[Linux基础知识](https://rocke.top/post/2022/01/13/linux-training-linux-basics/)
+[Linux基础知识](https://rocke.top/post/2022/01/13/linux-training-1-linux-basics/)
 
-[Vim编辑器与Linux系统管理](https://rocke.top/post/2022/01/20/linux-training-vim-editor-linux-system-administration/)
+[Vim编辑器与Linux系统管理](https://rocke.top/post/2022/01/20/linux-training-2-vim-editor-linux-system-administration/)
 
-[Vim进阶和Linux任务与服务](https://rocke.top/post/2022/01/26/linux-training-vim-advanced-linux-tasks-services/)
+[Vim进阶和Linux任务与服务](https://rocke.top/post/2022/01/26/linux-training-3-vim-advanced-linux-tasks-services/)
 
 [定制vim与shell入门](https://rocke.top/post/2022/01/27/linux-training-4-customizing-vim-getting-started-with-shell-programming/)
 
@@ -24,7 +24,7 @@ tags:
 
 ## 一、Linux基础知识
 
-[查看 - Linux基础知识](/post/2022/01/13/linux-training-linux-basics/)
+[查看 - Linux基础知识](/post/2022/01/13/linux-training-1-linux-basics/)
 
 - 各个linux发行版的特点，怎么选择自己的发行版
 - 怎么在windows上安装wsl2的linux子系统
@@ -37,7 +37,7 @@ tags:
 
 ## 二、Vim编辑器与Linux系统管理
 
-[查看 - Vim编辑器与Linux系统管理](/post/2022/01/20/linux-training-vim-editor-linux-system-administration/)
+[查看 - Vim编辑器与Linux系统管理](/post/2022/01/20/linux-training-2-vim-editor-linux-system-administration/)
 
 - vi与vim常用操作
 - 如何进程管理（查看系统任务/后台运行程序/查看进程/杀死进程）
@@ -47,7 +47,7 @@ tags:
 
 ## 三、Vim进阶和Linux任务与服务
 
-[查看 - Vim进阶和Linux任务与服务](/post/2022/01/26/linux-training-vim-advanced-linux-tasks-services/)
+[查看 - Vim进阶和Linux任务与服务](/post/2022/01/26/linux-training-3-vim-advanced-linux-tasks-services/)
 
 - vim进阶操作与宏
 - 如何用crontab设置定时任务
