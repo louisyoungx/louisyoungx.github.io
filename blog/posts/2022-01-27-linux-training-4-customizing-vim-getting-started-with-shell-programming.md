@@ -158,7 +158,7 @@ awk -f awk-script-file input-file(s)
 假设last -n 5的输出如下
 
 ```shell
-# last -n 5 仅取出前五行
+last -n 5 仅取出前五行
 root     pts/1  192.168.1.100 Tue Feb 10 11:21  still logged in
 root     pts/1  192.168.1.100 Tue Feb 10 00:46 - 02:28 (01:41)
 root     pts/1  192.168.1.100 Mon Feb 9 11:41 - 18:30 (06:48)
@@ -169,7 +169,7 @@ root     tty1                   Fri Sep 5 14:09 - 14:10 (00:01)
 如果只是显示最近登录的5个帐号
 
 ```shell
-#last -n 5 | awk  '{print $1}'
+last -n 5 | awk  '{print $1}'
 root
 root
 root
@@ -182,7 +182,7 @@ awk工作流程是这样的：读入有’n’换行符分割的一条记录，�
 如果只是显示/etc/passwd的账户
 
 ```shell
-#cat /etc/passwd |awk  -F ':'  '{print $1}'  
+cat /etc/passwd |awk  -F ':'  '{print $1}'  
 root
 daemon
 bin
@@ -196,7 +196,7 @@ sys
 如果只是显示/etc/passwd的账户和账户对应的shell,而账户与shell之间以tab键分割
 
 ```shell
-#cat /etc/passwd |awk  -F ':'  '{print $1"t"$7}'
+cat /etc/passwd |awk  -F ':'  '{print $1"t"$7}'
 root    /bin/bash
 daemon  /bin/sh
 bin     /bin/sh
@@ -221,7 +221,7 @@ awk工作流程是这样的：先执行BEGING，然后读取文件，读入有/n
 搜索/etc/passwd有root关键字的所有行
 
 ```shell
-#awk -F: '/root/' /etc/passwd
+awk -F: '/root/' /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 ```
 
@@ -232,7 +232,7 @@ root:x:0:0:root:/root:/bin/bash
 搜索/etc/passwd有root关键字的所有行，并显示对应的shell
 
 ```shell
-# awk -F: '/root/{print $7}' /etc/passwd            
+awk -F: '/root/{print $7}' /etc/passwd            
 /bin/bash
 ```
 
@@ -259,7 +259,7 @@ awk有许多内置变量用来设置环境信息，这些变量可以被改变�
 统计/etc/passwd:文件名，每行的行号，每行的列数，对应的完整行内容:
 
 ```shell
-#awk  -F ':'  '{print "filename:" FILENAME ",linenumber:" NR ",columns:" NF ",linecontent:"$0}' /etc/passwd
+awk  -F ':'  '{print "filename:" FILENAME ",linenumber:" NR ",columns:" NF ",linecontent:"$0}' /etc/passwd
 filename:/etc/passwd,linenumber:1,columns:7,linecontent:root:x:0:0:root:/root:/bin/bash
 filename:/etc/passwd,linenumber:2,columns:7,linecontent:daemon:x:1:1:daemon:/usr/sbin:/bin/sh
 filename:/etc/passwd,linenumber:3,columns:7,linecontent:bin:x:2:2:bin:/bin:/bin/sh
