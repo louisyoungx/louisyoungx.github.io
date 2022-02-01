@@ -64,10 +64,10 @@ tags:
 
 每一个骨灰级Linux桌面用户的最终选择。`Arch`的确比较适合好奇心强的人尝鲜，它的官方`Wiki`做得好，`AUR`仓库很繁荣，适合`DIY`玩家去折腾，确实也吸引了不少粉丝。
 
-- **轻量级，**从选择键盘布局到分区硬盘到安装引导全部由你决定，所以不像前面几个发行版一样会预装一些常用软件
+- **轻量级** ，从选择键盘布局到分区硬盘到安装引导全部由你决定，所以不像前面几个发行版一样会预装一些常用软件
 - pacman软件包管理工具
-- **灵活，整个系统完全由你说了算，当然你得有对应的能力**
-- **完备的WIKI，**从安装到使用再到故障排除非常之详细
+- **灵活** ，整个系统完全由你说了算，当然你得有对应的能力
+- **完备的WIKI** ，从安装到使用再到故障排除非常之详细
 - **WIKI中文化程度很高**
 
 #### CentOS
@@ -120,10 +120,12 @@ wsl -l -v
 - [ Solaris hosts](https://download.virtualbox.org/virtualbox/6.1.30/VirtualBox-6.1.30-148432-SunOS.tar.gz)
 - [ Solaris 11 IPS hosts](https://download.virtualbox.org/virtualbox/6.1.30/VirtualBox-6.1.30-148432-Solaris.p5p)
 
-CentOS8.1 ISO: http://mirrors.aliyun.com/centos/8.1.1911/isos/x86_64/CentOS-8.1.1911-x86_64-dvd1.iso
-CentOS7 ISO:  http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso
+[CentOS 8.1 ISO下载](http://mirrors.aliyun.com/centos/8.1.1911/isos/x86_64/CentOS-8.1.1911-x86_64-dvd1.iso)
 
-> 可选（需要购买密钥）VMware Workstation 16 Windows下载：https://www.vmware.com/go/getworkstation-win
+[CentOS 7 ISO下载](http://mirrors.aliyun.com/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso)
+
+> 可选 VMware Workstation（需要购买密钥）
+> [VMware Workstation 16 Windows下载](https://www.vmware.com/go/getworkstation-win)
 
 ### Virtualbox的必要配置
 

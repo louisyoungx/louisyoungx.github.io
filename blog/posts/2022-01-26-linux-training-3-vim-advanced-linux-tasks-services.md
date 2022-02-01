@@ -232,7 +232,7 @@ c 表示需要确认，例如全局查找"target"替换为"handsome"并且需要
 
 `:` 后面的 map 是关键字 ，后面是 key 和 value 。
 
-key 对应的是 ^M ， 这个 key 需要强调一下 ^M 是 Ctrl + v + m 打出来的（按下这三个键，VIM 会显示成 ^M ）,^M 代表[快捷键](https://www.zhihu.com/search?q=快捷键&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"article"%2C"sourceId"%3A"68111471"})是`Ctrl + m` , Ctrl + v + n 就是 ^N ,代表快捷键是 Ctrl + n 。Ctrl + v + x 就是 ^X (这里的 x 是代表 26 个字母中的任意一个) 代表快捷键 `Ctrl + x`。
+key 对应的是 ^M ， 这个 key 需要强调一下 ^M 是 Ctrl + v + m 打出来的（按下这三个键，VIM 会显示成 ^M ）,^M 代表快捷键是`Ctrl + m` , Ctrl + v + n 就是 ^N ,代表快捷键是 Ctrl + n 。Ctrl + v + x 就是 ^X (这里的 x 是代表 26 个字母中的任意一个) 代表快捷键 `Ctrl + x`。
 
 value 对应的是 `I#<ESC>`,表示按下快捷键以后执行的相应操作，`I` 是切换光标至行首并切换到编辑模式，`#`是行首输入的内容（ # 是VIM 文件中的注释符号 ），`<ESC>` 是退出编辑模式。 
 
@@ -948,8 +948,6 @@ tmux split-window
 # 划分左右两个窗格
 tmux split-window -h
 ```
-
-![img](https://www.wangbase.com/blogimg/asset/201910/bg2019102007.jpg)
 
 #### 移动光标
 
