@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dypend - dynamically add dependencies
-subtitle: 一行代码动态加载Python库依赖
+subtitle: Load dependency libraries dynamically
 author: "louisyoungx"
 date: 2021-12-10
 header_img: /img/in-post/2021-12-10/header.jpg
@@ -15,61 +15,64 @@ tags:
   - auto
 ---
 
-[`English Version`](https://www.reddit.com/r/Python/comments/rc9qzm/import_libraries_dynamically/)
+[`中文版本`](https://rocke.top/post/2021/12/11/dypend-dynamic-depends/)
 
-前几天在一个开源项目里遇到好多用户反馈，不会安装依赖，或者执行 `pip install -r requirements.txt` 没有反应。
+A few days ago, I encountered many users feedback in an open source project.
 
 <!-- more -->
 
-可能造成的原因有很多种，一一排查起来也很麻烦。
+The Problem is they can not install the dependencies, such as execute `pip install -r requirements.txt` but nothing happened.
 
-想一劳永逸解决这个问题，一般大家都是到 `site-packages` 里面把所需要的包导出来，放到项目根目录。
+There are many problems like the wrong config of env that can cause this result and it's troublesome to check them one by one.
 
-但这样终究太过粗糙，不符合Python优雅的个性。
+To solve this problem once and for all, we usually go to `site-packages` and put the required packages in the project root directory.
 
-所以我就想，能不能动态引入包，如果没有的话，再调用 `pip` 下载。最后也差不多实现了我的设想。
+it's crude, not elegant.
 
-[GitHub - Dypend: Load dependent libraries dynamically.](https://github.com/louisyoungx/dypend)
+So I wanted to load packages dynamically. if package do not exist, use `pip` to download them. 
 
-我大概查了一下，现在好像没有人用过这个方案，我自己使用感觉还是很方便的，分享给大家。
+I searched Google roughly, it seems no one have mention this method, and I feel it's convenient to use, so I share it.
 
-> 虽然想打成library给大家下载的，后来想到这又要依赖pip，违背了做动态依赖的本意
+> Although dypend is packaged for everyone to download, however that it depends on pip, which is against the intention of doing dynamic dependencies.
 >
-> 所以我推荐是使用 `快速开始 - 注入代码运行` 中的方式
+> So I recommend using the `Quick Start - Run by injecting code` approach
 
-## 快速开始
+## Quick start
 
-### 通过 `pip` 安装运行
+> Github dypend - https://github.com/louisyoungx/dypend
+> Could you give dypend a star, I really need it, Thank you! 
 
-在 `PyPI` 下载 `dypend`依赖包
+### Run by `pip install`
+
+Download the `dypend`  package from `PyPI` .
 
 ```shell
 pip install dypend
 ```
 
-在本地生成 `requirements.txt` 依赖文件
+Freeze `requirements.txt`  file.
 
 ```shell
-pip freeze >  requirements.txt
+pip freeze > requirements.txt
 ```
 
-在项目的入口文件的最上层引入 `dypend` ，不用更改任何其他代码
+import `dypend` at the top of the project's entry file, without changing any other code.
 
 ```python
 import dypend
 ```
 
-这时 `dypend`会检查你的Python环境中是否都有 `requirements.txt` 中的包，如果没有， `dypend`会调用 `pip`下载。
+ ``dypend`` will check packages in ``requirements.txt`` is available or not in your Python environment, if not, ``dypend`` will call ``pip`` to download them.
 
-### 注入代码运行
+### Run by injecting code
 
-在本地生成 `requirements.txt` 依赖文件
+Freeze `requirements.txt`  file.
 
 ```shell
 pip freeze >  requirements.txt
 ```
 
-在项目的入口文件的最上层添加如下代码，不用更改任何其他代码
+Add the following code to the top of the project's entry file, without changing any other code.
 
 ```python
 import os
@@ -117,4 +120,4 @@ def importLib():
 importLib
 ```
 
-这时dypend会检查你的Python环境中是否都有 `requirements.txt` 中的包，如果没有，你会看到depend帮你自动下载。
+ ``dypend`` will check packages in ``requirements.txt`` is available or not in your Python environment, if not, ``dypend`` will call ``pip`` to download them.

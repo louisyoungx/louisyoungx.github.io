@@ -19,7 +19,7 @@ tags:
   - save
 ---
 
-[`English Version`](https://www.reddit.com/r/Python/comments/ra49ib/github_stora_a_simple_reactive_local_storage/)
+[`English Version`](https://rocke.top/post/2021/12/08/stora-reactive-storage-lib/)
 
 前几天在学Vue.js的源码，发现数据的响应式很有意思，对数据进行修改能触发自定义的操作。所以我在想能否用这样的特性在Python上做个有意思的小工具。
 
