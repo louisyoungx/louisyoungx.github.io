@@ -13,7 +13,7 @@
     <meta name="description" content="Louis's blog, powered by VuePress, themed by Gungnir.">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     
-    <link rel="preload" href="/assets/css/0.styles.5eb7c7c5.css" as="style"><link rel="preload" href="/assets/js/app.759d827c.js" as="script"><link rel="preload" href="/assets/js/10.893febf1.js" as="script"><link rel="preload" href="/assets/js/1.fb07c90c.js" as="script"><link rel="preload" href="/assets/js/2.33946800.js" as="script"><link rel="preload" href="/assets/js/29.a90307b9.js" as="script"><link rel="prefetch" href="/assets/js/11.401bbca5.js"><link rel="prefetch" href="/assets/js/12.ba3786a4.js"><link rel="prefetch" href="/assets/js/13.feba5a24.js"><link rel="prefetch" href="/assets/js/14.74002869.js"><link rel="prefetch" href="/assets/js/15.f2bd9688.js"><link rel="prefetch" href="/assets/js/16.ff8b3d8f.js"><link rel="prefetch" href="/assets/js/17.9ae84871.js"><link rel="prefetch" href="/assets/js/18.6549651d.js"><link rel="prefetch" href="/assets/js/19.e842642a.js"><link rel="prefetch" href="/assets/js/20.2e9865c4.js"><link rel="prefetch" href="/assets/js/21.eabeefa0.js"><link rel="prefetch" href="/assets/js/22.a015e957.js"><link rel="prefetch" href="/assets/js/23.61f60af3.js"><link rel="prefetch" href="/assets/js/24.057333f5.js"><link rel="prefetch" href="/assets/js/25.52b60700.js"><link rel="prefetch" href="/assets/js/26.d1fabee8.js"><link rel="prefetch" href="/assets/js/27.a269c745.js"><link rel="prefetch" href="/assets/js/28.157230a0.js"><link rel="prefetch" href="/assets/js/30.a69e31f0.js"><link rel="prefetch" href="/assets/js/4.1df13ed0.js"><link rel="prefetch" href="/assets/js/5.dc148611.js"><link rel="prefetch" href="/assets/js/6.df68b98f.js"><link rel="prefetch" href="/assets/js/7.e71ab8e7.js"><link rel="prefetch" href="/assets/js/8.77e76114.js"><link rel="prefetch" href="/assets/js/9.48e4773c.js">
+    <link rel="preload" href="/assets/css/0.styles.5eb7c7c5.css" as="style"><link rel="preload" href="/assets/js/app.a31c5724.js" as="script"><link rel="preload" href="/assets/js/10.893febf1.js" as="script"><link rel="preload" href="/assets/js/1.fb07c90c.js" as="script"><link rel="preload" href="/assets/js/2.33946800.js" as="script"><link rel="preload" href="/assets/js/29.0b14ec61.js" as="script"><link rel="prefetch" href="/assets/js/11.401bbca5.js"><link rel="prefetch" href="/assets/js/12.ba3786a4.js"><link rel="prefetch" href="/assets/js/13.bbefde3d.js"><link rel="prefetch" href="/assets/js/14.74002869.js"><link rel="prefetch" href="/assets/js/15.f2bd9688.js"><link rel="prefetch" href="/assets/js/16.ff8b3d8f.js"><link rel="prefetch" href="/assets/js/17.9ae84871.js"><link rel="prefetch" href="/assets/js/18.6549651d.js"><link rel="prefetch" href="/assets/js/19.e842642a.js"><link rel="prefetch" href="/assets/js/20.2e9865c4.js"><link rel="prefetch" href="/assets/js/21.eabeefa0.js"><link rel="prefetch" href="/assets/js/22.a015e957.js"><link rel="prefetch" href="/assets/js/23.61f60af3.js"><link rel="prefetch" href="/assets/js/24.057333f5.js"><link rel="prefetch" href="/assets/js/25.52b60700.js"><link rel="prefetch" href="/assets/js/26.d1fabee8.js"><link rel="prefetch" href="/assets/js/27.a269c745.js"><link rel="prefetch" href="/assets/js/28.157230a0.js"><link rel="prefetch" href="/assets/js/30.a69e31f0.js"><link rel="prefetch" href="/assets/js/31.c16936b5.js"><link rel="prefetch" href="/assets/js/4.1df13ed0.js"><link rel="prefetch" href="/assets/js/5.dc148611.js"><link rel="prefetch" href="/assets/js/6.df68b98f.js"><link rel="prefetch" href="/assets/js/7.e71ab8e7.js"><link rel="prefetch" href="/assets/js/8.77e76114.js"><link rel="prefetch" href="/assets/js/9.48e4773c.js">
     <link rel="stylesheet" href="/assets/css/0.styles.5eb7c7c5.css">
   </head>
   <body>
@@ -84,24 +84,24 @@ awk [-F field-separator] 'commands' input-file(s)
 相当于shell脚本首行的：#!/bin/sh
 可以换成：#!/bin/awk</p> <p>3.将所有的awk命令插入一个单独文件，然后调用：
 awk -f awk-script-file input-file(s)
-其中，-f选项加载awk-script-file中的awk脚本，input-file(s)跟上面的是一样的。</p> <p>本章重点介绍命令行方式。</p> <h3 id="入门实例"><a href="#入门实例" class="header-anchor">#</a> 入门实例</h3> <p>假设last -n 5的输出如下</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># last -n 5 仅取出前五行</span>
+其中，-f选项加载awk-script-file中的awk脚本，input-file(s)跟上面的是一样的。</p> <p>本章重点介绍命令行方式。</p> <h3 id="入门实例"><a href="#入门实例" class="header-anchor">#</a> 入门实例</h3> <p>假设last -n 5的输出如下</p> <div class="language-shell extra-class"><pre class="language-shell"><code>last -n <span class="token number">5</span> 仅取出前五行
 root     pts/1  <span class="token number">192.168</span>.1.100 Tue Feb <span class="token number">10</span> <span class="token number">11</span>:21  still logged <span class="token keyword">in</span>
 root     pts/1  <span class="token number">192.168</span>.1.100 Tue Feb <span class="token number">10</span> 00:46 - 02:28 <span class="token punctuation">(</span>01:41<span class="token punctuation">)</span>
 root     pts/1  <span class="token number">192.168</span>.1.100 Mon Feb <span class="token number">9</span> <span class="token number">11</span>:41 - <span class="token number">18</span>:30 <span class="token punctuation">(</span>06:48<span class="token punctuation">)</span>
 dmtsai   pts/1  <span class="token number">192.168</span>.1.100 Mon Feb <span class="token number">9</span> <span class="token number">11</span>:41 - <span class="token number">11</span>:41 <span class="token punctuation">(</span>00:00<span class="token punctuation">)</span>
 root     tty1                   Fri Sep <span class="token number">5</span> <span class="token number">14</span>:09 - <span class="token number">14</span>:10 <span class="token punctuation">(</span>00:01<span class="token punctuation">)</span>
-</code></pre></div><p>如果只是显示最近登录的5个帐号</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#last -n 5 | awk  '{print $1}'</span>
+</code></pre></div><p>如果只是显示最近登录的5个帐号</p> <div class="language-shell extra-class"><pre class="language-shell"><code>last -n <span class="token number">5</span> <span class="token operator">|</span> <span class="token function">awk</span>  <span class="token string">'{print $1}'</span>
 root
 root
 root
 dmtsai
 root
-</code></pre></div><p>awk工作流程是这样的：读入有’n’换行符分割的一条记录，然后将记录按指定的域分隔符划分域，填充域，<code>$0</code>则表示所有域,<code>$1</code>表示第一个域,<code>$n</code>表示第n个域。默认域分隔符是”空白键” 或 “键”,所以<code>$1</code>表示登录用户，<code>$3</code>表示登录用户ip,以此类推。</p> <p>如果只是显示/etc/passwd的账户</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#cat /etc/passwd |awk  -F ':'  '{print $1}'  </span>
+</code></pre></div><p>awk工作流程是这样的：读入有’n’换行符分割的一条记录，然后将记录按指定的域分隔符划分域，填充域，<code>$0</code>则表示所有域,<code>$1</code>表示第一个域,<code>$n</code>表示第n个域。默认域分隔符是”空白键” 或 “键”,所以<code>$1</code>表示登录用户，<code>$3</code>表示登录用户ip,以此类推。</p> <p>如果只是显示/etc/passwd的账户</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">cat</span> /etc/passwd <span class="token operator">|</span><span class="token function">awk</span>  -F <span class="token string">':'</span>  <span class="token string">'{print $1}'</span>  
 root
 daemon
 bin
 sys
-</code></pre></div><p>这种是<code>awk+action</code>的示例，每行都会执行<code>action{print $1}</code>。</p> <p><code>-F</code>指定域分隔符为<code>:</code>。</p> <p>如果只是显示/etc/passwd的账户和账户对应的shell,而账户与shell之间以tab键分割</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#cat /etc/passwd |awk  -F ':'  '{print $1&quot;t&quot;$7}'</span>
+</code></pre></div><p>这种是<code>awk+action</code>的示例，每行都会执行<code>action{print $1}</code>。</p> <p><code>-F</code>指定域分隔符为<code>:</code>。</p> <p>如果只是显示/etc/passwd的账户和账户对应的shell,而账户与shell之间以tab键分割</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">cat</span> /etc/passwd <span class="token operator">|</span><span class="token function">awk</span>  -F <span class="token string">':'</span>  <span class="token string">'{print $1&quot;t&quot;$7}'</span>
 root    /bin/bash
 daemon  /bin/sh
 bin     /bin/sh
@@ -114,9 +114,9 @@ bin,/bin/sh
 sys,/bin/sh
 <span class="token punctuation">..</span><span class="token punctuation">..</span>
 blue,/bin/nosh
-</code></pre></div><p>awk工作流程是这样的：先执行BEGING，然后读取文件，读入有/n换行符分割的一条记录，然后将记录按指定的域分隔符划分域，填充域，<code>$0</code>则表示所有域,<code>$1</code>表示第一个域,<code>$n</code>表示第n个域,随后开始执行模式所对应的动作action。接着开始读入第二条记录······直到所有的记录都读完，最后执行END操作。</p> <p>搜索/etc/passwd有root关键字的所有行</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#awk -F: '/root/' /etc/passwd</span>
+</code></pre></div><p>awk工作流程是这样的：先执行BEGING，然后读取文件，读入有/n换行符分割的一条记录，然后将记录按指定的域分隔符划分域，填充域，<code>$0</code>则表示所有域,<code>$1</code>表示第一个域,<code>$n</code>表示第n个域,随后开始执行模式所对应的动作action。接着开始读入第二条记录······直到所有的记录都读完，最后执行END操作。</p> <p>搜索/etc/passwd有root关键字的所有行</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">awk</span> -F: <span class="token string">'/root/'</span> /etc/passwd
 root:x:0:0:root:/root:/bin/bash
-</code></pre></div><p>这种是pattern的使用示例，匹配了pattern(这里是root)的行才会执行action(没有指定action，默认输出每行的内容)。</p> <p>搜索支持正则，例如找root开头的: awk -F: ‘/^root/’ /etc/passwd</p> <p>搜索/etc/passwd有root关键字的所有行，并显示对应的shell</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># awk -F: '/root/{print $7}' /etc/passwd            </span>
+</code></pre></div><p>这种是pattern的使用示例，匹配了pattern(这里是root)的行才会执行action(没有指定action，默认输出每行的内容)。</p> <p>搜索支持正则，例如找root开头的: awk -F: ‘/^root/’ /etc/passwd</p> <p>搜索/etc/passwd有root关键字的所有行，并显示对应的shell</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">awk</span> -F: <span class="token string">'/root/{print $7}'</span> /etc/passwd            
 /bin/bash
 </code></pre></div><p>这里指定了<code>action{print $7}</code></p> <h3 id="awk内置变量"><a href="#awk内置变量" class="header-anchor">#</a> awk内置变量</h3> <p>awk有许多内置变量用来设置环境信息，这些变量可以被改变，下面给出了最常用的一些变量。</p> <blockquote><p>ARGC 命令行参数个数
 ARGV 命令行参数排列
@@ -128,7 +128,7 @@ NF 浏览记录的域的个数
 NR 已读的记录数
 OFS 输出域分隔符
 ORS 输出记录分隔符
-RS 控制记录分隔符</p></blockquote> <p>此外,<code>$0</code>变量是指整条记录。<code>$1</code>表示当前行的第一个域,<code>$2</code>表示当前行的第二个域,……以此类推</p> <p>统计/etc/passwd:文件名，每行的行号，每行的列数，对应的完整行内容:</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#awk  -F ':'  '{print &quot;filename:&quot; FILENAME &quot;,linenumber:&quot; NR &quot;,columns:&quot; NF &quot;,linecontent:&quot;$0}' /etc/passwd</span>
+RS 控制记录分隔符</p></blockquote> <p>此外,<code>$0</code>变量是指整条记录。<code>$1</code>表示当前行的第一个域,<code>$2</code>表示当前行的第二个域,……以此类推</p> <p>统计/etc/passwd:文件名，每行的行号，每行的列数，对应的完整行内容:</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">awk</span>  -F <span class="token string">':'</span>  <span class="token string">'{print &quot;filename:&quot; FILENAME &quot;,linenumber:&quot; NR &quot;,columns:&quot; NF &quot;,linecontent:&quot;$0}'</span> /etc/passwd
 filename:/etc/passwd,linenumber:1,columns:7,linecontent:root:x:0:0:root:/root:/bin/bash
 filename:/etc/passwd,linenumber:2,columns:7,linecontent:daemon:x:1:1:daemon:/usr/sbin:/bin/sh
 filename:/etc/passwd,linenumber:3,columns:7,linecontent:bin:x:2:2:bin:/bin:/bin/sh
@@ -376,7 +376,7 @@ if (expression) {
 getSum <span class="token variable">$NUM1</span> <span class="token variable">$NUM2</span>
 </code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/louisyoungx/louisyoungx.github.io/edit/master/blog/posts/2022-01-27-linux-training-4-customizing-vim-getting-started-with-shell-programming.md" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="19.2" height="19.2" viewBox="-43.52 -43.52 599.04 599.04" fill="currentColor" class="ov-icon" style="font-size:1.2em;"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>
       Edit this page on GitHub
-    </a></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/1/2022, 10:39:33 AM</span></div></footer> <!----> <div class="pager"><a href="/post/2022/01/28/linux-training/" class="next">
+    </a></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/4/2022, 5:56:18 PM</span></div></footer> <!----> <div class="pager"><a href="/post/2022/01/28/linux-training/" class="next">
     Next<br> <span>
       Linux Training
     </span></a> <a href="/post/2022/01/26/linux-training-3-vim-advanced-linux-tasks-services/" class="previous">
@@ -390,6 +390,6 @@ getSum <span class="token variable">$NUM1</span> <span class="token variable">$N
       Powered by <a href="https://vuepress.vuejs.org" target="_blank">VuePress</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
     </span></div></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.759d827c.js" defer></script><script src="/assets/js/10.893febf1.js" defer></script><script src="/assets/js/1.fb07c90c.js" defer></script><script src="/assets/js/2.33946800.js" defer></script><script src="/assets/js/29.a90307b9.js" defer></script>
+    <script src="/assets/js/app.a31c5724.js" defer></script><script src="/assets/js/10.893febf1.js" defer></script><script src="/assets/js/1.fb07c90c.js" defer></script><script src="/assets/js/2.33946800.js" defer></script><script src="/assets/js/29.0b14ec61.js" defer></script>
   </body>
 </html>
