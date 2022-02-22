@@ -15,9 +15,11 @@ tags:
   - javascript
 ---
 
-Just few days ago, I learned functional programming and React. As you know, I’m a Vue developer, So in this article, I gonna talking about the dfference of React & Vue.
+Just few days ago, I learned functional programming and React.
 
 <!-- more -->
+
+As you know, I’m a Vue developer, So in this article, I gonna talking about the dfference of React & Vue.
 
 ## Flexibility & Reuse
 

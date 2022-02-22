@@ -4,6 +4,7 @@ title: About
 avatar: /img/about-avatar.jpg
 name: Louis Young
 subname: '@louisyoungx'
+cv: /files/louisyoung_cv.pdf
 
 interests:
   - Web Development

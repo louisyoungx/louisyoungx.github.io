@@ -87,8 +87,8 @@ module.exports = {
         linkedin: "louis-young-4395b0221",
         facebook: "louisyoungx",
         twitter: "louisyoungx",
-        zhihu: "https://www.zhihu.com/people/gao-ji-tun-mao-shi",
-        email: "eric_aaron@icloud.com",
+        zhihu: "gao-ji-tun-mao-shi",
+        email: "eric_aaron@icloud.com"
       }
     },
     homeHeaderImages: {

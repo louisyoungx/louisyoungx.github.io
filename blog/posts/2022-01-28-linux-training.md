@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux Training
-subtitle: 我主讲的Linux培训，放出文档方便大家查阅
+subtitle: 我主讲的Linux培训文档
 author: "louisyoungx"
 date: 2022-01-28
 header_img: /img/in-post/2022-01-28/header.jpg
