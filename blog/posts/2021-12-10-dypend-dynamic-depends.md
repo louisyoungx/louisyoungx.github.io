@@ -7,7 +7,7 @@ date: 2021-12-10
 header_img: /img/in-post/2021-12-10/header.jpg
 catalog: true
 tags:
-  - chinese
+  - english
   - python
   - library
   - dynamic
