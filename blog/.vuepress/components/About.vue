@@ -79,23 +79,23 @@ import Common from "vuepress-theme-gungnir/lib/client/components/Common.vue";
 import MarkdownIt from "markdown-it";
 
 const LINKS = {
-  github: "https://github.com/Renovamen",
-  linkedin: "https://www.linkedin.com/in/xiaohan-zou",
-  googleScholar: "https://scholar.google.com/citations?user=RuW6xgMAAAAJ",
-  // facebook: "https://www.facebook.com/renovamen.zou",
-  twitter: "https://www.twitter.com/renovamen_zxh",
-  zhihu: "https://www.zhihu.com/people/chao-neng-gui-su",
-  email: "mailto:renovamenzxh@gmail.com"
+  github: "louisyoungx",
+  linkedin: "louis-young-4395b0221",
+  facebook: "louisyoungx",
+  twitter: "louisyoungx",
+  zhihu: "gao-ji-tun-mao-shi",
+  email: "eric_aaron@icloud.com",
+  // googleScholar: "https://scholar.google.com/citations?user=RuW6xgMAAAAJ",
 };
 
 const ICONS = {
   github: "ri-github-fill",
   linkedin: "ri-linkedin-box-fill",
-  googleScholar: "ai-google-scholar-square",
-  // facebook: "ri-facebook-box-fill",
+  facebook: "ri-facebook-box-fill",
   twitter: "ri-twitter-fill",
   zhihu: "ri-zhihu-line",
-  email: "hi-mail"
+  email: "hi-mail",
+  // googleScholar: "ai-google-scholar-square",
 };
 
 const BIO_PATH = "/md/about.md";

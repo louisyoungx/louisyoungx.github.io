@@ -59,7 +59,8 @@ module.exports = {
         facebook: "louisyoungx",
         twitter: "louisyoungx",
         zhihu: "gao-ji-tun-mao-shi",
-        email: "eric_aaron@icloud.com"
+        email: "eric_aaron@icloud.com",
+        rss: "/rss.xml",
       }
     },
 
@@ -110,10 +111,10 @@ module.exports = {
       git: isProd,
       katex: true,
       giscus: {
-        repo: "This-is-an-Apple/blog-giscus-comments",
-        repoId: "R_kgDOGl2SjQ",
+        repo: "louisyoungz/blog-giscus-comments",
+        repoId: "R_kgDOG-_ggw",
         category: "Announcements",
-        categoryId: "DIC_kwDOGl2Sjc4CAcxK",
+        categoryId: "DIC_kwDOG-_gg84CODOd",
         darkTheme: "https://rocke.top/giscus/dark.css"
       },
       mdPlus: {
