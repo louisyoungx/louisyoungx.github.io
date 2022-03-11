@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: Post
 title: Zpy Lab - chinese programming
 subtitle: Zpy-lab与夭折的中文编程
-author: "louisyoungx"
+author: louisyoungx
 date: 2021-12-20
-header_img: /img/in-post/2021-12-20/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2021-12-20/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - chinese
   - zpy

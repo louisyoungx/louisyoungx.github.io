@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: SubPost
 title: Stora - reactive storage
 subtitle: 超简单的Python状态存储库
-author: "louisyoungx"
+author: louisyoungx
 date: 2021-12-09
-header_img: /img/in-post/2021-12-09/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2021-12-09/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - chinese
   - python
@@ -19,7 +21,7 @@ tags:
   - save
 ---
 
-[`English Version`](https://rocke.top/post/2021/12/08/stora-reactive-storage-lib/)
+[`English Version`](https://rocke.top/post/2021/12/09/stora-reactive-storage-lib/) | [`中文版本`](https://rocke.top/post/2021/12/09/stora-reactive-storage-lib/)
 
 前几天在学Vue.js的源码，发现数据的响应式很有意思，对数据进行修改能触发自定义的操作。所以我在想能否用这样的特性在Python上做个有意思的小工具。
 

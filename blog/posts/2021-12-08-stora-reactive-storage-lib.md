@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: Post
 title: Stora - reactive storage
 subtitle: Simple Python state storage
-author: "louisyoungx"
+author: louisyoungx
 date: 2021-12-08
-header_img: /img/in-post/2021-12-08/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2021-12-08/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - english
   - python
@@ -19,7 +21,7 @@ tags:
   - save
 ---
 
-[`中文版本`](https://rocke.top/post/2021/12/09/stora-reactive-storage-lib/)
+[`English Version`](https://rocke.top/post/2021/12/09/stora-reactive-storage-lib/) | [`中文版本`](https://rocke.top/post/2021/12/09/stora-reactive-storage-lib/)
 
 When I learning source code of vue.js, I found it has a reactive data, you can trigger something if you change the reactive data, like do some state manage. so I'm wondering if python could do some interesting things like that.
 

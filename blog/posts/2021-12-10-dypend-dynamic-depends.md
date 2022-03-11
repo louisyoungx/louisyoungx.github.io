@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: Post
 title: Dypend - dynamically add dependencies
 subtitle: Load dependency libraries dynamically
-author: "louisyoungx"
+author: louisyoungx
 date: 2021-12-10
-header_img: /img/in-post/2021-12-10/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2021-12-10/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - english
   - python
@@ -15,7 +17,7 @@ tags:
   - auto
 ---
 
-[`中文版本`](https://rocke.top/post/2021/12/11/dypend-dynamic-depends/)
+[`English Version`](https://rocke.top/post/2021/12/10/dypend-dynamic-depends/) | [`中文版本`](https://rocke.top/post/2021/12/11/dypend-dynamic-depends/)
 
 A few days ago, I encountered many users feedback in an open source project.
 

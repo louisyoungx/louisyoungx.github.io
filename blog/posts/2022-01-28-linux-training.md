@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: Post
 title: Linux Training
 subtitle: 我主讲的Linux培训文档
-author: "louisyoungx"
+author: louisyoungx
 date: 2022-01-28
-header_img: /img/in-post/2022-01-28/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2022-01-28/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - chinese
   - linux

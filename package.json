@@ -1,21 +1,22 @@
 {
-  "name": "louis-blog",
-  "description": "Louis's blog, powered by VuePress, themed by Gungnir.",
-  "author": "Louis Young <eric_aaron@icloud.com>",
-  "license": "MIT",
+  "name": "renovamen-blog",
   "private": true,
-  "workspaces": [
-    "packages/plugins/*",
-    "packages/theme-gungnir"
-  ],
-  "useWorkspaces": true,
+  "description": "Renovamen's blog, powered by VuePress 2, themed by Gungnir.",
+  "license": "Apache-2.0",
+  "author": "Renovamen <renovamenzxh@gmail.com>",
   "scripts": {
-    "start": "vuepress dev blog --no-cache --host 0.0.0.0 --port 4000",
-    "build": "vuepress build blog --dest dist",
-    "preview": "cd dist && http-server"
+    "clean": "rimraf blog/.vuepress/.temp blog/.vuepress/.cache dist",
+    "start": "vuepress dev blog --clean-cache",
+    "build": "yarn clean && vuepress build blog --clean-cache --dest dist",
+    "serve": "anywhere -h localhost -d dist"
+  },
+  "dependencies": {
+    "vuepress-theme-gungnir": "2.0.0-alpha.17"
   },
   "devDependencies": {
-    "vuepress": "^1.8.2",
-    "vuepress-theme-gungnir": "^0.2.0"
+    "anywhere": "^1.5.0",
+    "rimraf": "^3.0.2",
+    "vuepress": "^2.0.0-beta.36",
+    "vuepress-vite": "2.0.0-beta.36"
   }
 }

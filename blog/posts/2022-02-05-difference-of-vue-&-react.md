@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: Post
 title: Difference of React & Vue
 subtitle: The difference between React & Vue design philosophy
-author: "louisyoungx"
+author: louisyoungx
 date: 2022-02-05
-header_img: /img/in-post/2022-02-05/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2022-02-05/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - english
   - web

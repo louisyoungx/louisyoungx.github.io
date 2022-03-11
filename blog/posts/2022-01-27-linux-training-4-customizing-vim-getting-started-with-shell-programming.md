@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: SubPost
 title: Linux Training 4 - Customizing Vim & Getting started with shell programming
 subtitle: Linux培训(四) 定制vim与shell入门
-author: "louisyoungx"
+author: louisyoungx
 date: 2022-01-27
-header_img: /img/in-post/2022-01-27/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2022-01-27/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - chinese
   - linux

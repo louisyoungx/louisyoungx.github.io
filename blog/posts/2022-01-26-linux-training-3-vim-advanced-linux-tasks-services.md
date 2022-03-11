@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: SubPost
 title: Linux Training 3 - Vim advanced & Linux tasks & Services
 subtitle: Linux培训(三) Vim进阶和Linux任务与服务
-author: "louisyoungx"
+author: louisyoungx
 date: 2022-01-26
-header_img: /img/in-post/2022-01-26/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2022-01-26/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - chinese
   - linux

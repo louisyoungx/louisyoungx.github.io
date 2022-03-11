@@ -1,57 +1,133 @@
-const path = require("path");
+const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   title: "Louis Young (@louisyoungx)",
-  description: "Louis's blog, powered by VuePress, themed by Gungnir.",
+  description: "Louis Young a Web developer and Python full stack developer.",
+
   head: [
-    ["link", { rel: "icon", href: "/img/logo.svg" }],
-    ["link", { rel: "shortcut icon", type: "image/png", href: "/img/logo/favicon-16x16.png" }],
-    ["link", { rel: "mask-icon", type: "image/png", href: "/img/logo/favicon-32x32.png"}],
-    ["link", { rel: "apple-touch-icon", href: "/img/logo/apple-touch-icon.png" }],
-    ["link", { rel: "manifest", href: "/manifest.json" }],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: `/img/logo/favicon-16x16.png`
+      }
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: `/img/logo/favicon-32x32.png`
+      }
+    ],
+    ["meta", { name: "application-name", content: "Louis Young" }],
+    ["meta", { name: "apple-mobile-web-app-title", content: "Louis Young" }],
     [
       "meta",
-      {
-        name: "viewport",
-        content: "width=device-width,initial-scale=1,user-scalable=no"
-      }
-    ]
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" }
+    ],
+    [
+      "link",
+      { rel: "apple-touch-icon", href: `/images/icons/apple-touch-icon.png` }
+    ],
+    ["meta", { name: "theme-color", content: "#377bb5" }],
+    ["meta", { name: "msapplication-TileColor", content: "#377bb5" }]
   ],
-  theme: "gungnir",
+
+  bundler: "@vuepress/vite",
+
+  theme: "vuepress-theme-gungnir",
+
   themeConfig: {
     repo: "louisyoungx/louisyoungx.github.io",
     docsDir: "blog",
     docsBranch: "master",
-    editLinks: true,
-    lastUpdated: true,
-    hitokoto: {
-      api: "https://v1.hitokoto.cn/?c=c&c=d&c=h&c=i&c=j&c=k"
+
+    hitokoto: "https://v1.hitokoto.cn?c=d&c=i", // enable hitokoto (一言) or not?
+
+    // personal information
+    personalInfo: {
+      name: "louisyoungx",
+      avatar: "/img/avatar.jpg",
+      description: "Coding for fun.  if-else porter / TypeError creator",
+      sns: {
+        github: "louisyoungx",
+        linkedin: "louis-young-4395b0221",
+        facebook: "louisyoungx",
+        twitter: "louisyoungx",
+        zhihu: "gao-ji-tun-mao-shi",
+        email: "eric_aaron@icloud.com"
+      }
     },
-    searchIcon: "ri-search-2-line",
-    codeTheme: "gungnir-dark",
-    rss: {
-      site_url: "https://rocke.top",
-      copyright: "louisyoungx 2018-2021",
-      count: 20
+
+    // header images on home page
+    homeHeaderImages: [
+      {
+        path: "/img/home-bg/1.jpg",
+        mask: "rgba(40, 57, 101, .4)"
+      },
+      {
+        path: "/img/home-bg/2.jpg",
+        mask: "rgba(196, 176, 131, .1)"
+      },
+      {
+        path: "/img/home-bg/3.jpg",
+        mask: "rgba(68, 74, 83, .1)"
+      },
+      {
+        path: "/img/home-bg/4.jpg",
+        mask: "rgba(19, 75, 50, .2)"
+      },
+      {
+        path: "/img/home-bg/5.jpg"
+      }
+    ],
+
+    // other pages
+    pages: {
+      tags: {
+        subtitle: "Black Sheep Wall",
+        bgImage: {
+          path: "/img/pages/tags.jpg",
+          mask: "rgba(211, 136, 37, .5)"
+        }
+      },
+      links: {
+        subtitle:
+          "When you are looking at the stars, please put the brightest star shining night sky as my soul.",
+        bgImage: {
+          path: "/img/pages/links.jpg",
+          mask: "rgba(64, 118, 190, 0.5)"
+        }
+      }
     },
-    comment: {
-      owner: "louisyoungz",
-      repo: "gitalk-comments",
-      clientId: "ddc15aed4656e1bb2733",
-      clientSecret: "d2341e141193423f44c86625c165bdad3c488613"
-    },
-    analytics: {
+
+    themePlugins: {
+      // only enable git plugin in production mode
+      git: isProd,
+      katex: true,
+      giscus: {
+        repo: "This-is-an-Apple/blog-giscus-comments",
+        repoId: "R_kgDOGl2SjQ",
+        category: "Announcements",
+        categoryId: "DIC_kwDOGl2Sjc4CAcxK",
+        darkTheme: "https://rocke.top/giscus/dark.css"
+      },
+      mdPlus: {
+        all: true
+      },
       ga: "G-PQTY6HBG27",
-      ba: "2e2c8699088629e7ee784fefe7da5621"
+      ba: "2e2c8699088629e7ee784fefe7da5621",
+      rss: {
+        siteURL: "https://rocke.top",
+        copyright: "louisyoungx 2018-2022"
+      }
     },
-    katex: true,
-    mdPlus: {
-      all: true
-    },
-    readingTime: {
-      excludes: ["/about", "/tags/.*", "/links"]
-    },
-    nav: [
+
+    navbar: [
       {
         text: "Home",
         link: "/",
@@ -75,104 +151,24 @@ module.exports = {
       {
         text: "Portfolio",
         link: "https://github.com/louisyoungx/",
-        icon: "ri-space-ship-fill"
+        icon: "oi-rocket"
       }
     ],
-    personalInfo: {
-      name: "louisyoungx",
-      avatar: "/img/avatar.jpg",
-      description: "Coding for fun.  if-else porter / TypeError creator",
-      sns: {
-        github: "louisyoungx",
-        linkedin: "louis-young-4395b0221",
-        facebook: "louisyoungx",
-        twitter: "louisyoungx",
-        zhihu: "gao-ji-tun-mao-shi",
-        email: "eric_aaron@icloud.com"
-      }
-    },
-    homeHeaderImages: {
-      local: [
-        {
-          path: "/img/home-bg/1.jpg",
-          mask: "rgba(40, 57, 101, .4)"
-        },
-        {
-          path: "/img/home-bg/2.jpg",
-          mask: "rgba(196, 176, 131, .1)"
-        },
-        {
-          path: "/img/home-bg/3.jpg",
-          mask: "rgba(68, 74, 83, .1)"
-        },
-        {
-          path: "/img/home-bg/4.jpg",
-          mask: "rgba(19, 75, 50, .2)"
-        },
-        {
-          path: "/img/home-bg/5.jpg"
-        }
-      ]
-    },
-    pages: {
-      tags: {
-        title: "Tags",
-        subtitle: "Black Sheep Wall",
-        bgImage: {
-          path: "/img/pages/tags.jpg",
-          mask: "rgba(211, 136, 37, .5)"
-        }
-      },
-      links: {
-        title: "Links",
-        subtitle:
-          "When you are looking at the stars, please put the brightest star shining night sky as my soul.",
-        bgImage: {
-          path: "/img/pages/links.jpg",
-          mask: "rgba(64, 118, 190, 0.5)"
-        }
-      }
-    },
+
     footer: `
-      &copy; <a href="https://github.com/louisyoungx" target="_blank">louisyoungx</a> 2018-2021
+      &copy; <a href="https://github.com/louisyoungx" target="_blank">louisyoungx</a> 2018-2022
       <br>
-      Powered by <a href="https://vuepress.vuejs.org" target="_blank">VuePress</a> &
+      Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
     `
   },
+
   markdown: {
-    // lineNumbers: true,
-    extractHeaders: ["h2", "h3", "h4", "h5"]
-  },
-  configureWebpack: () => {
-    return {
-      resolve: {
-        alias: {
-          public: path.resolve(__dirname, "./public")
-        }
-      }
-    };
-    // const NODE_ENV = process.env.NODE_ENV;
-    // if (NODE_ENV === "production") {
-    //   return {
-    //     output: {
-    //       publicPath:
-    //         "https://cdn.jsdelivr.net/gh/louisyoungx/louisyoungx.github.io@gh-pages/"
-    //     },
-    //     resolve: {
-    //       alias: {
-    //         public: path.resolve(__dirname, "./public")
-    //       }
-    //     }
-    //   };
-    // } else {
-    //   return {
-    //     resolve: {
-    //       alias: {
-    //         public: path.resolve(__dirname, "./public")
-    //       }
-    //     }
-    //   };
-    // }
+    extractHeaders: {
+      level: [2, 3, 4, 5]
+    },
+    code: {
+      lineNumbers: false
+    }
   }
 };

@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: SubPost
 title: Linux Training 2 - Vim editor & Linux system administration
 subtitle: Linux培训(二) Vim编辑器与Linux系统管理
-author: "louisyoungx"
+author: louisyoungx
 date: 2022-01-20
-header_img: /img/in-post/2022-01-20/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2022-01-20/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - chinese
   - linux

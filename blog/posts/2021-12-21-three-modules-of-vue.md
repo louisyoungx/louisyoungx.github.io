@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: Post
 title: Vue.js - Three Core Modules
 subtitle: Three Core Modules of vue.js
-author: "louisyoungx"
+author: louisyoungx
 date: 2021-12-21
-header_img: /img/in-post/2021-12-21/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2021-12-21/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - english
   - web

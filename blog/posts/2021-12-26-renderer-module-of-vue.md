@@ -1,11 +1,13 @@
 ---
-layout: post
+layout: Post
 title: Vue.js - Renderer Module
 subtitle: Deep Dive into Renderer Modules of Vue.js
-author: "louisyoungx"
+author: louisyoungx
 date: 2021-12-26
-header_img: /img/in-post/2021-12-26/header.jpg
-catalog: true
+useHeaderImage: true
+headerImage: /img/in-post/2021-12-26/header.jpg
+headerMask: rgb(14, 21, 5, .2)
+permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
   - english
   - web
@@ -15,7 +17,7 @@ tags:
   - javascript
 ---
 
-[`中文版本`](https://juejin.cn/post/7046015093875671076)
+[`English Version`](https://rocke.top/post/2021/12/26/renderer-module-of-vue/) | [`中文版本`](https://rocke.top/post/2021/12/27/renderer-module-of-vue/)
 
 This article is mainly about how vue renderer module work, and a lightweight renderer is given as an example.
 
