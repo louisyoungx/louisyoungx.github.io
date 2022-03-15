@@ -59,7 +59,7 @@ module.exports = {
         facebook: "louisyoungx",
         twitter: "louisyoungx",
         zhihu: "gao-ji-tun-mao-shi",
-        email: "eric_aaron@icloud.com",
+        email: "louisyoungx@qq.com",
         rss: "/rss.xml",
       }
     },
