@@ -1,5 +1,5 @@
 ---
-layout: SubPost
+layout: Post
 title: Stora - reactive storage
 subtitle: 超简单的Python状态存储库
 author: louisyoungx

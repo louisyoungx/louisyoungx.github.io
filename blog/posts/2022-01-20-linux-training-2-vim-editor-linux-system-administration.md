@@ -1,5 +1,5 @@
 ---
-layout: SubPost
+layout: Post
 title: Linux Training 2 - Vim editor & Linux system administration
 subtitle: Linux培训(二) Vim编辑器与Linux系统管理
 author: louisyoungx

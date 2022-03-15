@@ -1,5 +1,5 @@
 ---
-layout: SubPost
+layout: Post
 title: Linux Training 4 - Customizing Vim & Getting started with shell programming
 subtitle: Linux培训(四) 定制vim与shell入门
 author: louisyoungx

@@ -1,5 +1,5 @@
 ---
-layout: SubPost
+layout: Post
 title: Linux Training 3 - Vim advanced & Linux tasks & Services
 subtitle: Linux培训(三) Vim进阶和Linux任务与服务
 author: louisyoungx

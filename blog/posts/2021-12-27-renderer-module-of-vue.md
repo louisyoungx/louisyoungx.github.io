@@ -1,5 +1,5 @@
 ---
-layout: SubPost
+layout: Post
 title: Vue.js - Renderer Module
 subtitle: Deep Dive into Renderer Modules of Vue.js
 author: louisyoungx

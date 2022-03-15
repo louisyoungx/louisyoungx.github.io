@@ -1,5 +1,5 @@
 ---
-layout: SubPost
+layout: Post
 title: Linux Training 1 - Linux Basics
 subtitle: Linux培训(一) Linux基础操作
 author: louisyoungx

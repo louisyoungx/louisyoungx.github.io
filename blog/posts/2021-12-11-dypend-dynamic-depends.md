@@ -1,5 +1,5 @@
 ---
-layout: SubPost
+layout: Post
 title: Dypend - dynamically add dependencies
 subtitle: 一行代码动态加载Python库依赖
 author: louisyoungx
