@@ -115,7 +115,7 @@ module.exports = {
         repoId: "R_kgDOG-_ggw",
         category: "Announcements",
         categoryId: "DIC_kwDOG-_gg84CODOd",
-        darkTheme: "https://rocke.top/giscus/dark.css"
+        darkTheme: "https://rocke.top/styles/giscus-dark.css"
       },
       mdPlus: {
         all: true
