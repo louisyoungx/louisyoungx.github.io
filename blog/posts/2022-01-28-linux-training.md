@@ -9,18 +9,19 @@ headerImage: /img/in-post/2022-01-28/header.jpg
 headerMask: rgb(14, 21, 5, .2)
 permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
+  - technology
   - chinese
   - linux
   - training
 ---
 
-[Linux基础知识](https://rocke.top/post/2022/01/13/linux-training-1-linux-basics/)
+[Linux基础知识](/post/2022/01/13/linux-training-1-linux-basics/)
 
-[Vim编辑器与Linux系统管理](https://rocke.top/post/2022/01/20/linux-training-2-vim-editor-linux-system-administration/)
+[Vim编辑器与Linux系统管理](/post/2022/01/20/linux-training-2-vim-editor-linux-system-administration/)
 
-[Vim进阶和Linux任务与服务](https://rocke.top/post/2022/01/26/linux-training-3-vim-advanced-linux-tasks-services/)
+[Vim进阶和Linux任务与服务](/post/2022/01/26/linux-training-3-vim-advanced-linux-tasks-services/)
 
-[定制vim与shell入门](https://rocke.top/post/2022/01/27/linux-training-4-customizing-vim-getting-started-with-shell-programming/)
+[定制vim与shell入门](/post/2022/01/27/linux-training-4-customizing-vim-getting-started-with-shell-programming/)
 
 <!-- more -->
 

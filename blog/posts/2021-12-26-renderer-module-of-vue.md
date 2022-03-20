@@ -9,6 +9,7 @@ headerImage: /img/in-post/2021-12-26/header.jpg
 headerMask: rgb(14, 21, 5, .2)
 permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
+  - technology
   - english
   - web
   - vue.js
@@ -17,7 +18,7 @@ tags:
   - javascript
 ---
 
-[`English Version`](https://rocke.top/post/2021/12/26/renderer-module-of-vue/) | [`中文版本`](https://rocke.top/post/2021/12/27/renderer-module-of-vue/)
+[`English Version`](/post/2021/12/26/renderer-module-of-vue/) | [`中文版本`](/post/2021/12/27/renderer-module-of-vue/)
 
 This article is mainly about how vue renderer module work, and a lightweight renderer is given as an example.
 

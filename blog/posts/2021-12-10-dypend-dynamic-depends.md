@@ -9,6 +9,7 @@ headerImage: /img/in-post/2021-12-10/header.jpg
 headerMask: rgb(14, 21, 5, .2)
 permalinkPattern: /post/:year/:month/:day/:slug/
 tags:
+  - technology
   - english
   - python
   - library
@@ -17,7 +18,7 @@ tags:
   - auto
 ---
 
-[`English Version`](https://rocke.top/post/2021/12/10/dypend-dynamic-depends/) | [`中文版本`](https://rocke.top/post/2021/12/11/dypend-dynamic-depends/)
+[`English Version`](/post/2021/12/10/dypend-dynamic-depends/) | [`中文版本`](/post/2021/12/11/dypend-dynamic-depends/)
 
 A few days ago, I encountered many users feedback in an open source project.
 

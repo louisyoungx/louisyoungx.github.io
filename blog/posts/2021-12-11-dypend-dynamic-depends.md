@@ -8,7 +8,9 @@ useHeaderImage: true
 headerImage: /img/in-post/2021-12-11/header.jpg
 headerMask: rgb(14, 21, 5, .2)
 permalinkPattern: /post/:year/:month/:day/:slug/
+hide: true
 tags:
+  - technology
   - chinese
   - python
   - library
@@ -17,7 +19,7 @@ tags:
   - auto
 ---
 
-[`English Version`](https://rocke.top/post/2021/12/10/dypend-dynamic-depends/) | [`中文版本`](https://rocke.top/post/2021/12/11/dypend-dynamic-depends/)
+[`English Version`](/post/2021/12/10/dypend-dynamic-depends/) | [`中文版本`](/post/2021/12/11/dypend-dynamic-depends/)
 
 前几天在一个开源项目里遇到好多用户反馈，不会安装依赖，或者执行 `pip install -r requirements.txt` 没有反应。
 

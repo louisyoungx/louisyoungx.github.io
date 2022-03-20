@@ -8,7 +8,9 @@ useHeaderImage: true
 headerImage: /img/in-post/2021-12-27/header.jpg
 headerMask: rgb(14, 21, 5, .2)
 permalinkPattern: /post/:year/:month/:day/:slug/
+hide: true
 tags:
+  - technology
   - chinese
   - web
   - vue.js
@@ -17,7 +19,7 @@ tags:
   - javascript
 ---
 
-[`English Version`](https://rocke.top/post/2021/12/26/renderer-module-of-vue/) | [`中文版本`](https://rocke.top/post/2021/12/27/renderer-module-of-vue/)
+[`English Version`](/post/2021/12/26/renderer-module-of-vue/) | [`中文版本`](/post/2021/12/27/renderer-module-of-vue/)
 
 本文将以一个轻量级渲染器为例，介绍vue渲染器模块原理。
 

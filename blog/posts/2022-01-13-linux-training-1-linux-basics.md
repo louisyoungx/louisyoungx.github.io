@@ -8,7 +8,9 @@ useHeaderImage: true
 headerImage: /img/in-post/2022-01-13/header.jpg
 headerMask: rgb(14, 21, 5, .2)
 permalinkPattern: /post/:year/:month/:day/:slug/
+hide: true
 tags:
+  - technology
   - chinese
   - linux
   - training

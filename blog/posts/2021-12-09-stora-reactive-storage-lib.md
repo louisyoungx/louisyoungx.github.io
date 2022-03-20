@@ -8,7 +8,9 @@ useHeaderImage: true
 headerImage: /img/in-post/2021-12-09/header.jpg
 headerMask: rgb(14, 21, 5, .2)
 permalinkPattern: /post/:year/:month/:day/:slug/
+hide: true
 tags:
+  - technology
   - chinese
   - python
   - library
