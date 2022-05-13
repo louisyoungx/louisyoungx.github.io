@@ -20,11 +20,6 @@ p.desc {
   border-radius: 0;
 }
 
-:not(pre) > code::before,
-:not(pre) > code::after {
-  content: "`";
-}
-
 p a code {
   font-weight: 600;
 }
