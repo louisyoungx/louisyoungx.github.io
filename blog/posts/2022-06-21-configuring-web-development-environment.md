@@ -157,24 +157,27 @@ pnpm config set registry https://registry.npmmirror.com/
 ```
 
 > ⚠️ 国内镜像源可能会导致部分包无法安装
->
-> 可选镜像源列表:
-> - 淘宝源 *(国内推荐)* - https://registry.npmmirror.com/
-> - npm官方源 *(npm默认)* - https://registry.npmjs.org/
-> - yarn官方源 *(yarn默认)* - https://registry.yarnpkg.com/
-> - cnpm源 - http://r.cnpmjs.org/
-> - nj源 - https://registry.nodejitsu.com/
-> - npmMirror源 - https://skimdb.npmjs.com/registry/
-> - edunpm源 - http://registry.enpmjs.org/
-> - 腾讯云源 - http://mirrors.cloud.tencent.com/npm/
-> - 字节源 - https://bnpm.byted.org/
+
+|   镜像源    |                 地址                  |   说明    |
+| :---------: | :-----------------------------------: | :-------: |
+|   淘宝源    |    https://registry.npmmirror.com/    | 国内推荐⭐️ |
+|  npm官方源  |      https://registry.npmjs.org/      |  npm默认  |
+| yarn官方源  |     https://registry.yarnpkg.com/     | yarn默认  |
+|   cnpm源    |         http://r.cnpmjs.org/          |           |
+|    nj源     |    https://registry.nodejitsu.com/    |           |
+| npmMirror源 |  https://skimdb.npmjs.com/registry/   |           |
+|  edunpm源   |      http://registry.enpmjs.org/      |           |
+|  腾讯云源   | http://mirrors.cloud.tencent.com/npm/ |           |
+|   字节源    |        https://bnpm.byted.org/        |           |
+
+
 
 ## 安装zsh（可选）
 
 1. 安装zsh
 
 macos自带zsh，windows的ubuntu子系统需要先通过以下命令安装zsh
-  
+
 ```shell
 sudo apt install zsh
 ```
