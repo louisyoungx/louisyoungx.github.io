@@ -14,8 +14,8 @@ p.desc {
   font-family: "ui-monospace", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation-Mono", "Courier-New", monospace;
   font-size: 0.875em;
   font-weight: 600;
-  color: var(--c-text);
-  background: transparent;
+  color: var(--inline-code-color);
+  background: var(--inline-code-bg-color);
   padding: 0;
   border-radius: 0;
 }
@@ -27,4 +27,8 @@ p a code {
 p a code::before,
 p a code::after {
   color: var(--c-text);
+}
+
+blockquote > p {
+  margin: 8px 0!important;
 }
