@@ -37,8 +37,8 @@ DAG 画布需要新增一个带有子画布的容器节点，相比于普通节�
 
 Workflow 整体是有向无环图（DAG）结构，实现容器节点需要在这一结构上加上子图（Sub DAG），组合形成树形有向无环图（Tree-like DAG)。
 
-![DAG](/img/in-post/2024-10-11/dag.jpg)
-![Tree-like DAG](/img/in-post/2024-10-11/tree-like-dag.jpg)
+![DAG](/img/in-post/2024-10-11/dag.png)
+![Tree-like DAG](/img/in-post/2024-10-11/tree-like-dag.png)
 
 改造前自由画布仅支持渲染 DAG 结构，若要渲染树形 DAG，主要需改造以下部分
 
