@@ -21,7 +21,7 @@ yarn
 Start developing the site:
 
 ```bash
-yarn dev
+yarn start
 ```
 
 Build for production with minification:
