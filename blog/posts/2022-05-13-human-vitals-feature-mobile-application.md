@@ -1,7 +1,7 @@
 ---
 layout: Post
 title: Research on human vitals feature mobile application
-subtitle: based on fiber optic sensing
+subtitle: Based on fiber optic sensing
 author: louisyoungx
 date: 2022-05-13
 useHeaderImage: true
