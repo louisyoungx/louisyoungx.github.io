@@ -1,6 +1,5 @@
 cache/
 .idea/
-yarn.lock
 
 # VuePress files
 blog/.vuepress/.temp/
